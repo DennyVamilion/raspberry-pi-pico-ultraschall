@@ -1,4 +1,4 @@
-//Programmer: Zer02c
+//Programmer: Denny Vamilion
 //Date: 23.07.2022
 // this script is made for the HC-SR04 Ultrasonic Sensor Module
 
