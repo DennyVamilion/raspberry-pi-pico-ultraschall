@@ -1,7 +1,6 @@
 //Programmer: Denny Vamilion
 //Date: 23.07.2022
 // this script is made for the HC-SR04 Ultrasonic Sensor Module
-
 #include "pico/stdlib.h"
 
 #define LOW 0
@@ -12,8 +11,8 @@ int main(){
 
     int triggerpin = 2;
     int echopin = 3;
-    int messung = 0;
-    int ergebnis = 0;
+    float signaloff = 0;
+    float signalon = 0;
 
     gpio_init(triggerpin);
     gpio_set_dir(triggerpin, GPIO_OUT);
@@ -29,8 +28,20 @@ int main(){
         sleep_ms(10);
         gpio_put(triggerpin, LOW);
 
-        messung = 
-        // muss noch zu ende gemacht werden (pulseIn)
+        while (echopin == 0)
+        {
+            signaloff = time_us_64();
+        }
+
+        while (echopin == 0)
+        {
+            signalon = time_us_64();
+        }
+        
+        float timepassed = signalon - signaloff;
+
+        return timepassed;
+        
     }
     
 }
