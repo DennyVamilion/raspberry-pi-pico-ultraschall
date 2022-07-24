@@ -30,6 +30,7 @@ int main(){
         gpio_put(triggerpin, LOW);
 
         messung = 
+        // muss noch zu ende gemacht werden (pulseIn)
     }
     
 }
