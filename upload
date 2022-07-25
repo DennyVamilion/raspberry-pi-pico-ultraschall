@@ -1,1 +1,14 @@
+#!/bin/bash
+cd build
+make
+echo -- Upload to pi --
+echo ---- Upload to pi ----
+echo ------ Upload to pi ------
+echo -------- Upload to pi --------
 
+
+cp main.uf2 /media/kali/RPI-RP2/
+
+echo --------------- Upload Sucecces ---------------
+
+#command: sudo chmod 777 name of the object 
