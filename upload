@@ -7,7 +7,7 @@ echo ------ Upload to pi ------
 echo -------- Upload to pi --------
 
 
-cp main.uf2 /media/kali/RPI-RP2/
+cp main.uf2 /media/kali/RPI-RP2/ #for windows change the command cp to copy and the target for the upload to ur pico on windows
 
 echo --------------- Upload Sucecces ---------------
 
